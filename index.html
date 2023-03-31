@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kbinko Web Development</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+    <header id="home" class="fadeInUp">
+        <nav>
+             <div class="logo">
+                <img src="" alt="Your Logo" id="logo-image">
+                Kbinko
+            </div>
+            <button class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+             </button>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content slideIn">
+            <h1>Kbinko Web Development</h1>
+            <p>Front-end developer with React & React Native expertise</p>
+            <a href="#portfolio" class="button">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="slideIn">About Me</h2>
+        <p>I am an aspiring freelance web developer with a passion for creating high-quality, modern, and responsive web applications. With expertise in React and React Native, I specialize in mobile app and front-end web development. My goal is to provide my clients with innovative solutions that meet their unique needs and exceed their expectations.</p>
+    </section>
+
+
+<section id="portfolio">
+    <h2 class="slideIn">Portfolio</h2>
+    <div class="projects">
+        <div class="project fadeInUp" data-delay="100ms">
+            <img src="project1.jpg" alt="Project 1">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-desc">Project 1 description goes here.</p>
+        </div>
+        <div class="project fadeInUp" data-delay="200ms">
+            <img src="project2.jpg" alt="Project 2">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-desc">Project 2 description goes here.</p>
+        </div>
+        <div class="project fadeInUp" data-delay="300ms">
+            <img src="project3.jpg" alt="Project 3">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-desc">Project 3 description goes here.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact section -->
+<section id="contact">
+    <h2 class="slideIn">Contact Me</h2>
+    <div class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message..."></textarea>
+
+        <button class="button" type="submit">Submit</button>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2023 Kbinko Web Development. All rights reserved.</p>
+    </footer>
+    
+    
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

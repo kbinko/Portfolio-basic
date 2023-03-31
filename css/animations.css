@@ -1,0 +1,43 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp[data-delay], .slideIn[data-delay] {
+    animation-delay: var(--delay);
+}
+
+.fadeInUp, .slideIn {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.fadeInUp.visible, .slideIn.visible {
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.fadeInUp.visible {
+    animation-name: fadeInUp;
+}
+
+.slideIn.visible {
+    animation-name: slideIn;
+}
