@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kbinko Web Development</title>
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Kbinko Web Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animations.css" />
 </head>
+
 <body>
     <header id="home" class="fadeInUp">
         <nav>
-             <div class="logo">
-                <img src="" alt="Your Logo" id="logo-image">
-                Kbinko
+            <div class="logo">
+                <img src="/images/logo.png" alt="Your Logo" id="logo-image">
             </div>
             <button class="burger-menu" id="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-             </button>
+            </button>
             <ul id="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -28,64 +38,174 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-content slideIn">
-            <h1>Kbinko Web Development</h1>
-            <p>Front-end developer with React & React Native expertise</p>
+        <div class="header-content hidden">
+            <h1>Kbinko Web Developer</h1>
+            <h2>Front-end developer with React & React Native expertise</h2>
+            <p>Creating stunning web experiences, one line of code at a time.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/yourusername" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/Binek12/" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/kbinko" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/kbinkowebdev/" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
             <a href="#portfolio" class="button">View My Work</a>
         </div>
     </header>
 
     <section id="about">
-        <h2 class="slideIn">About Me</h2>
-        <p>I am an aspiring freelance web developer with a passion for creating high-quality, modern, and responsive web applications. With expertise in React and React Native, I specialize in mobile app and front-end web development. My goal is to provide my clients with innovative solutions that meet their unique needs and exceed their expectations.</p>
+        <div class="about-wrapper hidden">
+
+            <h2 class="slideIn about-heading">About Me</h2>
+            <p class="about-text ">
+                Hey there! I'm Konrad, a developer driven by my passion for crafting exceptional
+                web
+                experiences. With a robust foundation in technologies like HTML, CSS,
+                JavaScript,
+                and React, I
+                combine my technical know-how with creativity to transform your ideas into
+                reality.
+                My
+                commitment to excellence guarantees that your project not only looks stunning
+                but
+                also operates
+                seamlessly.
+
+                As a developer with a keen eye for detail and a love for modern, high-quality
+                designs, I thrive
+                in the challenge of understanding your unique requirements and collaborating
+                closely
+                with you
+                throughout the process. Together, we'll create a website that reflects your
+                vision
+                and resonates
+                with your target audience, ensuring a memorable user experience.
+
+                In a fast-paced digital world, I'm continually honing my skills and exploring
+                new
+                technologies
+                to stay ahead of the curve. With experience in React Native, Three.js, and Expo,
+                I'm
+                well-equipped to handle diverse projects and deliver innovative solutions
+                tailored
+                to your
+                needs.
+
+                So, whether you're looking to build a sleek, professional online presence or a
+                cutting-edge web
+                application, I'm ready to take on the challenge and exceed your expectations.
+                Let's
+                work
+                together and turn your vision into a remarkable reality!
+            </p>
+        </div>
     </section>
 
 
-<section id="portfolio">
-    <h2 class="slideIn">Portfolio</h2>
-    <div class="projects">
-        <div class="project fadeInUp" data-delay="100ms">
-            <img src="project1.jpg" alt="Project 1">
-                <h3 class="project-title">Project 1</h3>
-                <p class="project-desc">Project 1 description goes here.</p>
+    <section id="portfolio">
+        <div class="hidden">
+
+            <h2 class="slideIn ">Portfolio</h2>
+            <div class="projects ">
+                <div class="project-header">
+                    <p>
+                        Following projects showcase my skills and knowledge through real-world
+                        examples of my work.
+                        Every project is described in detail and includes a link to a live
+                        demo. It showcases my abilities in problem solving, working with
+                        different technologies and
+                        managing projects.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/Project1.png" alt="Project Name" class="project-image">
+                    </div>
+                    <div class="project-source-code-link">
+                        <a href="https://kbinko.github.io" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">3D portfolio</h3>
+                        <p class="project-description">My other, more advanced portfolio website
+                            made with interactive 3D models. Contains more information but works
+                            slower on mobile devices</p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="react">react</span>
+                        <span class="threejs">three.js</span>
+                        <span class="tailwindcss">tailwindcss</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="images/Moviebrowser.png" alt="Project Name"
+                            class="project-image">
+                    </div>
+                    <div class="project-source-code-link">
+                        <a href="https://kbinko.github.io/moviebrowser/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Moviebrowser</h3>
+                        <p class="project-description">Web-base platform that allows users to
+                            search through movie database and check movies for
+                            details. Currently not mobile friendly.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="react">react</span>
+                        <span class="bootstrap">bootstrap</span>
+                        <span class="css">css</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project fadeInUp" data-delay="200ms">
-            <img src="project2.jpg" alt="Project 2">
-                <h3 class="project-title">Project 2</h3>
-                <p class="project-desc">Project 2 description goes here.</p>
-        </div>
-        <div class="project fadeInUp" data-delay="300ms">
-            <img src="project3.jpg" alt="Project 3">
-                <h3 class="project-title">Project 3</h3>
-                <p class="project-desc">Project 3 description goes here.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contact section -->
-<section id="contact">
-    <h2 class="slideIn">Contact Me</h2>
-    <div class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name">
+    <section id="contact">
+        <div class="hidden">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email">
+            <h2 class="slideIn">Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your message..."></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
 
-        <button class="button" type="submit">Submit</button>
-    </div>
-</section>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
+
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
 
     <footer>
-        <p>&copy; 2023 Kbinko Web Development. All rights reserved.</p>
+        <p>&copy; 2023 Kbinko Web Developer. All rights reserved.</p>
     </footer>
-    
-    
+
+
     <button id="scrollToTop" class="scroll-to-top">↑</button>
     <script src="js/main.js"></script>
 </body>
+
 </html>
