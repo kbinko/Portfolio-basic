@@ -272,13 +272,6 @@ section {
     text-align: justify;
 }
 
-.about-img {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
 #portfolio {
     text-align: center;
     color: var(--accent-color);
@@ -530,6 +523,18 @@ footer {
   nav .logo {
     margin-right: 20px;
   }
+  .about-heading {
+        font-size: 32px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .about-wrapper {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
